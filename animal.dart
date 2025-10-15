@@ -5,8 +5,9 @@
 ///Subclassing is used to model IS-A method
 ///In Dart subclass dont inherit super constructor automatically
 
+
 class Animal {
-  const Animal({required this.age}); 
+  const Animal({required this.age});
   //this is super constructor
   final int age;
   void sleep() => print('sleep');
@@ -16,9 +17,10 @@ class Animal {
 //Dog,Cow,CleverDog are subclasses
 
 class Dog extends Animal {
-  Dog({required int age}) : super(age: age); 
+  Dog({required int age}) : super(age: age);
   //Calling the super constructor using constructor with initialiser list
   void bark() => print('bark');
+ 
 }
 
 class Cow extends Animal {
@@ -42,7 +44,6 @@ void main() {
   final dog = Dog(age: 5);
   dog.bark();
   dog.sleep(); //Inheritance
- 
 
   final cow = Cow(age: 45);
   cow.moo();
