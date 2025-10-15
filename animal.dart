@@ -17,7 +17,7 @@ class Animal {
 
 class Dog extends Animal {
   Dog({required int age}) : super(age: age); 
-  //Calling the super constructor
+  //Calling the super constructor using constructor with initialiser list
   void bark() => print('bark');
 }
 
