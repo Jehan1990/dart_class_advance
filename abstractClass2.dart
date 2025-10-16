@@ -3,13 +3,13 @@
 ///subclasses
 
 void main() {
-  final circle = Circle(6), rectangle=Rectangle(5,8);
+  final circle = Circle(6), rectangle = Rectangle(3, 8);
   circle.draw();
   rectangle.draw();
-
 }
 
 abstract class Shape {
+
   //abstract method
   void draw();
 }
@@ -28,9 +28,9 @@ class Circle extends Shape {
 
 class Rectangle extends Shape {
   //Constructor
-  Rectangle(this.length, this.width);
+  Rectangle(this.length,this.width);
   //Instance Variables
-  final double length, width;
+  final double width, length;
   //Override Abstract Methods
   @override
   void draw() {
