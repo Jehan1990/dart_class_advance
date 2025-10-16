@@ -3,9 +3,10 @@
 ///subclasses
 
 void main() {
-  final circle = Circle(5), rectangle = Rectangle(4, 8);
+  final circle = Circle(6), rectangle=Rectangle(5,8);
   circle.draw();
   rectangle.draw();
+
 }
 
 abstract class Shape {
@@ -16,25 +17,21 @@ abstract class Shape {
 class Circle extends Shape {
   //Constructor
   Circle(this.radius);
-
-  //Property
+  //Instance Variable
   final double radius;
-
   //Override Abstract Method
   @override
   void draw() {
-    print('Area of circle:  ${3.414 * radius * radius}');
+    print('Area of circle:  ${3.141 * radius * radius}');
   }
 }
 
 class Rectangle extends Shape {
-  //Constrctor
-  Rectangle(this.width, this.length);
-
-  //Properties
+  //Constructor
+  Rectangle(this.length, this.width);
+  //Instance Variables
   final double length, width;
-
-  //Methods
+  //Override Abstract Methods
   @override
   void draw() {
     print('Area of Rectangle: ${length * width}');
