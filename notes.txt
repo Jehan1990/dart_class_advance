@@ -1,0 +1,10 @@
+-Object is the root class in the heirachy of class in dart
+-Tree of classes
+
+                       OBJECT
+    MAP     ITERABLE    NUM         STRING      BOOL  
+            LIST,SET    INT,DOUBLE
+
+-All classes are subclasses of Object
+-In dart everything is an Object
+
