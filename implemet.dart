@@ -23,6 +23,9 @@ abstract class ImplementA {
 
 abstract class ImplementB {
   void b();
+  void d(){
+    print('Concret Method');
+  }
 }
 
 //As class AB implements both ImplementA and ImplementB
@@ -34,6 +37,10 @@ class AB implements ImplementA, ImplementB {
   void b() {}
   @override
   void c() {}
+  @override
+  void d() {
+    print('If implement then must override concrete method also');
+  }
 }
 
 //As class SubClassAB extends ImplementA
@@ -42,4 +49,10 @@ class SubClassAB extends ImplementA{
   @override
   void a() {}
 
+}
+
+class SubClassD extends ImplementB{
+  @override
+  void b() {}
+  //This does not need to override method d as it is concrete method
 }
