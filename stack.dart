@@ -1,6 +1,6 @@
 
 class Stack<T>{
-  final List<T>_items=[];
+  final List<T>_items=[];//Stact has-a List this composition
 
   void push(T item)=>_items.add(item);
 
